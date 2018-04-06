@@ -1,0 +1,6 @@
+<h2>Atualizar</h2>
+<%= form_tag({action: 'update'}, {method: 'get'}) do %>
+  <%= label_tag(:description, "Descrição:") %>
+  <%= text_field_tag(:description, @task.description) %>
+  <%= submit_tag("atualizar") %>
+<% end %>
